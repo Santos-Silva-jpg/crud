@@ -1,0 +1,17 @@
+{
+  "name": "crud-usuarios",
+  "version": "1.0.0",
+  "description": "Atividade Prática - CRUD de Usuários (Front-end + Back-end + Banco de Dados)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": ["crud", "express", "sqlite"],
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "sqlite3": "^5.1.7"
+  }
+}

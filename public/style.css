@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background: #111;
+    color: #eee;
+    font-family: "Segoe UI", Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    width: min(650px, 100%);
+    margin: 30px auto;
+}
+
+#title {
+    border-bottom: 1px solid #777;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin: 0 0 10px;
+    font-size: 26px;
+    letter-spacing: 2px;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+input, button {
+    box-sizing: border-box;
+    padding: 8px;
+    border: 1px solid #777;
+    border-radius: 4px;
+    background: #eee;
+    color: #111;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+button {
+    cursor: pointer;
+    background: #2b7de9;
+    color: #fff;
+    border: none;
+    padding: 8px 14px;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+#btnCancelar {
+    background: #555;
+}
+
+.mensagem {
+    min-height: 20px;
+    margin: 12px 0 0;
+    font-size: 14px;
+}
+
+.mensagem.sucesso { color: #4caf50; }
+.mensagem.erro { color: #ff5c5c; }
+
+.results {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px dashed #777;
+    text-align: left;
+}
+
+h3 {
+    margin: 0 0 10px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+#list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin: 6px 0;
+    padding: 10px;
+    border: 1px solid #555;
+    background: #181818;
+    border-radius: 4px;
+}
+
+#list .info {
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+#list .acoes {
+    display: flex;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+#list .acoes button {
+    padding: 5px 10px;
+    font-size: 13px;
+}
+
+#list .acoes button:last-child {
+    background: #d9534f;
+}

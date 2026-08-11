@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CRUD</title>
+</head>
+<body>
+    <main class="container">
+        <div id="title">
+            <h2>CRUD</h2>
+        </div>
+
+        <section class="form">
+            <input type="hidden" id="userId">
+
+            <input id="name" placeholder="Nome" required>
+            <input id="email" type="email" placeholder="E-mail" required>
+            <input id="cpf" placeholder="CPF (somente números)" maxlength="14" required>
+            <input id="telefone" placeholder="Telefone" required>
+            <input id="data" type="date" placeholder="Data de Nascimento" required>
+
+            <button id="btnSalvar" onclick="salvarUsuario()">Salvar</button>
+            <button id="btnCancelar" onclick="cancelarEdicao()" style="display:none;">Cancelar</button>
+        </section>
+
+        <p id="mensagem" class="mensagem"></p>
+
+        <section class="results">
+            <h3>Registros</h3>
+            <ul id="list"></ul>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
